@@ -55,10 +55,12 @@ void link() {
 //    Serial.printf("PSW:%s\r\n", WiFi.psk().c_str());
     bool wifiConfig = autoConfig();
     
-    if(wifiConfig == false)
+    if(wifiConfig == false){
+		digitalWrite(LED_BUILTIN, LOW);		
         htmlConfig();//HTML配网
+	}
     else{
-      digitalWrite(LED_BUILTIN, LOW);
+      digitalWrite(LED_BUILTIN, HIGH);
     }
 }
 
@@ -246,7 +248,6 @@ void handleNotFound() {
 void htmlConfig()
 {
     WiFi.mode(WIFI_AP_STA);//设置模式为AP+STA
-    digitalWrite(LED_BUILTIN, LOW);
     WiFi.softAP(ap_ssid, ap_password);
     Serial.println("AP设置完成");
     
