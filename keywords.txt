@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For ESP8266WebLink
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+WebLinkEE	KEYWORD1
+WebLinkFS	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init	KEYWORD2
+configAP	KEYWORD2
+saveConfig	KEYWORD2
+loadConfig	KEYWORD2
+reboot	KEYWORD2
+wifiType	KEYWORD2
+handleRoot	KEYWORD2
+wifiScan	KEYWORD2
+wifiConfig	KEYWORD2
+handleNotFound	KEYWORD2
+htmlConfig	KEYWORD2
+autoConfig	KEYWORD2
